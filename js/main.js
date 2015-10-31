@@ -171,11 +171,12 @@ var User = Backbone.Model.extend({
     },
 
     isLoggedIn: function() {
-        if (this.getUsername() === this.defaults.username ||
+        /*if (this.getUsername() === this.defaults.username ||
             this.getResourceURI() === this.defaults.resourceURI) {
             this.logout();
-        }
-        return this.get("loggedIn");
+        }*/
+        return (localStorage.userId !== undefined);
+        //return this.get("loggedIn");
     },
 
     ignoreLoginPrompt: function() {
@@ -668,7 +669,7 @@ function sendInitialData(tabId) {
                 var total_time = end_time - activeItem.start_time;
 
                 if (total_time > 5000) {
-                    var url = "http://whitelist-api.herokuapp.com/history"
+                    var url = "http://whitelist-api.herokuapp.com/history/create"
 
                     var item = $.extend({}, activeItem); //copy activeItem
                     item.end_event = "";
