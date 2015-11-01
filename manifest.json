@@ -1,5 +1,5 @@
 {
-  "name": "Facebook Connect For Chrome Extension",
+  "name": "Lantern Chrome Extension",
   "version": "1.0",
   "description": "This plugin is showing how Facebook Connect/Graph API works on Chrome Extension.",
   "background":
@@ -7,7 +7,7 @@
   },
   "browser_action": {
     "default_popup": "popup.html",
-    "default_icon":"icon.png"
+    "default_icon":"lantern3.png"
   },
   "manifest_version":2,
   "permissions": [
