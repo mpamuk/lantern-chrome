@@ -253,7 +253,11 @@ var User = Backbone.Model.extend({
 
     // check if a url is in the blacklist
     inBlackList: function(url) {
-        return this.inSet("blacklist", url);
+        return url.indexOf("google.com") != -1 ||
+               url.indexOf("facebook.com") != -1  ||
+               url.indexOf("localhost") != -1 ||
+               url.indexOf("chrome://") != -1;
+        //return this.inSet("blacklist", url);
     },
 
     // check if a url is in the whitelise
