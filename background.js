@@ -1,6 +1,6 @@
 
 var successURL = 'https://www.facebook.com/connect/login_success.html';
-successURL = 'http://localhost:3000/?#';
+successURL = 'http://lantern-app.herokuapp.com/?#';
 function onFacebookLogin() {
                 console.log("ON FB LOGIN");
                 var firstTime = true;
