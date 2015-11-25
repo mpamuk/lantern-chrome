@@ -2,7 +2,7 @@
 
 ///////////Global vars/////////////
 // global website base, set to localhost for testing, use deploy script to change
-var siteName = "Eyebrowse";
+var siteName = "Lantern";
 var GOOGLE_FAVICON_URL = "http://www.google.com/s2/favicons?domain_url=";
 
 // nag settings
